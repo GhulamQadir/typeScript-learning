@@ -1,0 +1,63 @@
+DIFFERENCE BETWEENFRESH AND STALE OBJECTS
+let obj ={   // it is fresh object
+    name:"abc",
+    rollNo:42344
+    age:20
+}
+fresh object becomes stale object when: 
+1)value modify
+2)variable assign
+3)function argument pass
+--------------------------------------------------------------------------------------------------------------
+
+                        DIFFERENCE BETWEEN JSON AND OBJECTS
+1)JSON 1 format ha data store or or exchange karny from client to server and server to client side
+2)JSON ke full form Javascript object notation ha lekin iska javascript s koi talluq nhi bs iska format 
+javascript objects jesa ha
+3)JSON or object ka main difference ye ha k JSON ke keys double quotes ma ayngi jbke javascript 
+ma ye zaroori nhi. for example: 
+let json = {"name":"abc","age":30}   // ye JSON likhne ka tareeqa ha
+let obj = {name: "abc": age: 30}       // ye object likhne ka tareeqa ha
+
+datatypes allowed in JSON:
+1)string,
+2)number,
+3)boolean,
+4)array,
+5)object,
+6)null
+
+JSON commonly used in web apis
+--------------------------------------------------------------------------------------------------------
+
+DIFFERENCE BETWEEN PRIMITIVE AND NON-PRIMITIVE DATATYPES
+In TypeScript, primitive data types and non-primitive data types are differentiated based on their nature 
+and behavior.
+Primitive data types are the basic building blocks of data in TypeScript. They are stored as values, not as objects. The primitive data types in TypeScript are:
+
+- Number
+- String
+- Boolean
+- Null
+- Undefined
+- Symbol (new in ECMAScript 2015)
+- BigInt (new in ECMAScript 2020)
+
+On the other hand, non-primitive data types, also known as reference types or complex types, are stored
+as objects. They are:
+- Object
+- Array
+- Function
+- Date
+- RegExp
+- Error
+
+The key differences between primitive and non-primitive data types are:
+
+1. Storage: Primitive types are stored as values, while non-primitive types are stored as references toobjects.
+2. Mutability: Primitive types are immutable, meaning their values cannot be changed once created.
+Non-primitive types are mutable, meaning their properties and values can be modified.
+3. Comparison: Primitive types are compared by value, while non-primitive types are compared by reference.
+
+Understanding the distinction between primitive and non-primitive data types is essential for effective programming in TypeScript, as it impacts how you work with variables, perform comparisons, and manage data in your applications.
+
