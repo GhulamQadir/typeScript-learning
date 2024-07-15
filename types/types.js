@@ -12,16 +12,42 @@
 //   class: 12,
 // };
 // console.log(student1);
-var userName = "Ghulam Qadir";
-var rollNO = 3456;
+let userName = "Ghulam Qadir";
+let rollNO = 3456;
 console.log(userName);
 console.log(rollNO);
-var combineData = {
-    name: "Faizan",
-    age: 24,
-    address: "xyz street, Karachi",
-    companyName: "Estimate.ai",
-    companySize: "80+people",
-    compLocation: "shahrah-e-faisal, Karachi",
-};
-console.log(combineData);
+export {};
+// ------------------------------------------------------------------------------------------------
+// // TYPE LITERAL
+// let tshirtSize: "small" | "medium" | "large" | "x-large";
+// tshirtSize = "medium";
+// console.log(tshirtSize);
+// ------------------------------------------------------------------------------------------------
+// // TYPE UNION
+// let countVal: string | number;
+// countVal = "seventy nine";
+// // countVal = false  // (it throws an error because type boolean is not assignable to type string or number)
+// countVal = 79;
+// console.log(countVal);
+// ------------------------------------------------------------------------------------------------
+// // TYPE INTERSECTION
+// type Person = {
+//   name: string;
+//   age: number;
+//   address: string;
+// };
+// type Company = {
+//   companyName: string;
+//   companySize: string;
+//   compLocation: string;
+// };
+// type PersonAndCompany = Person & Company;
+// let combineData: PersonAndCompany = {
+//   name: "Faizan",
+//   age: 24,
+//   address: "xyz street, Karachi",
+//   companyName: "Estimate.ai",
+//   companySize: "80+people",
+//   compLocation: "shahrah-e-faisal, Karachi",
+// };
+// console.log(combineData);

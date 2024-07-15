@@ -39,15 +39,67 @@
 // } else {
 //   console.log("Todo found=>>", findTodo);
 // }
-// ---------------------------------------------------------------------------------------------
-// // TUPLE
-// let milkShake: [string, string] = ["Mango Shake", "Medium Glass"];
-// console.log(milkShake);
 // --------------------------------------------------------------------------------------
 // ARRAYS PRACTISE
-var matrixArr = [
+let matrixArr = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
 ];
-console.log(2 /* SubwayTypes.Cheesesteak */);
+export {};
+// let sumOFDiagonals = 0;
+// let diagonalElements: number[] = [];
+// for (let i = 0; i < matrixArr.length; i++) {
+//   diagonalElements.push(matrixArr[i][i]);
+//   sumOFDiagonals += matrixArr[i][i];
+// }
+// console.log(`Diagonal elements: =>>${diagonalElements}`);
+// console.log(`Sum of Diagonals: =>>${sumOFDiagonals}`);
+// ------------------------------------------------------------------------------------------
+// // FILTERING MULTIDIMENSIONAL ARRAY
+// let filteredArray: number[] = [];
+// for (let j = 0; j < matrixArr.length; j++) {
+//   let filterMatrix: number[] = matrixArr[j].filter((a) => {
+//     return a % 2 === 0;
+//   });
+//   filteredArray.push(...filterMatrix);
+// }
+// console.log(filteredArray);
+// --------------------------------------------------------------------------------------------
+// // FILTERING ARRAY OF OBJECTS
+// type Book = {
+//   name: string;
+//   author: string;
+//   publishedYear: number;
+// };
+// let books: Book[] = [
+//   {
+//     name: "The Red and the Black",
+//     author: "Stendhal",
+//     publishedYear: 1830,
+//   },
+//   {
+//     name: "The History of Tom Jones, a Foundling",
+//     author: "Henry Fielding",
+//     publishedYear: 1749,
+//   },
+//   {
+//     name: "War and Peace",
+//     author: "Tolstoy",
+//     publishedYear: 1869,
+//   },
+//   {
+//     name: "Madame Bovary",
+//     author: "Gustave Flaubert",
+//     publishedYear: 1856,
+//   },
+// ];
+// let filterBooksByYear = books.filter((book) => {
+//   return book.publishedYear > 1800;
+// });
+// console.log(filterBooksByYear);
+// let filterBooksByAuthor = books.filter((book) => {
+//   return book.author === "Tolstoy";
+// });
+// console.log(filterBooksByAuthor);
+// -------------------------------------------------------------------------------------------

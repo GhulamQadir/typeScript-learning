@@ -18,8 +18,9 @@
 // console.log("registrationForm=>>", registrationForm);
 // -----------------------------------------------------------------------------------------------
 // explicit type casting or type assertion (to change the type of variable forcefully)
-var myName = "Ghulam Qadir";
-var takeNameAsString = myName;
+let myName = "Ghulam Qadir";
+let takeNameAsString = myName;
 // // we can do this by also using this method
 // let takeNameAsString: number = <number>myName;
 console.log(takeNameAsString);
+export {};

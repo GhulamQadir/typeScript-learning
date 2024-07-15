@@ -5,6 +5,7 @@
 // interface Circle {
 //   radius: number;
 // }
+export {};
 // let footBall: FootBall = {
 //   radius: 25,
 // };

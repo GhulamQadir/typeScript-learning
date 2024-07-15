@@ -91,12 +91,13 @@
 // dmasRule();
 // ---------------------------------------------------------------------------------------------------
 // setTimeOut Function
-var time = 10;
-var interval = setInterval(function () {
-    console.log("".concat(time, " second(s) left"));
+let time = 10;
+let interval = setInterval(() => {
+    console.log(`${time} second(s) left`);
     time--;
 }, 1000);
-setTimeout(function () {
+setTimeout(() => {
     clearInterval(interval);
     console.log("Times Up!");
 }, 11000);
+export {};
