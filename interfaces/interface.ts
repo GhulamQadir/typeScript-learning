@@ -50,23 +50,3 @@
 // // of Ball are inside Cylinder, and so it can be assigned.
 
 // ------------------------------------------------------------------------------------------------
-
-// INDEX SIGNATURE
-type DynamicForm = {
-  [key: string]: string | number;
-};
-
-let studentForm: DynamicForm = {
-  name: "abc",
-  rollNo: 4233,
-  email: "abc@gmail.com",
-};
-let registrationForm: DynamicForm = {
-  firstName: "XYZ",
-  lastName: "abc",
-  email: "xyz@gmail.com",
-  phoneNum: 42342342424,
-  city: "Karachi",
-};
-console.log("studentForm=>>", studentForm);
-console.log("registrationForm=>>", registrationForm);
