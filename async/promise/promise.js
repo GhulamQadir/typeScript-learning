@@ -1,4 +1,4 @@
-// // RETURN MONEY EXAMPLE
+// // RETURN MONEY EXAMPLE 1
 // const returnMoney = new Promise((resolve, reject) => {
 //   setTimeout(() => {
 //     resolve("money returned!!");
@@ -15,7 +15,7 @@
 //     console.log("Promise completed");
 //   });
 // ---------------------------------------------------------------------------------------------------
-// fetching data from api using promise
+// fetching data from api using promise (example 2)
 let fetchDataPromise = new Promise((resolve, reject) => {
     fetch("https://jsonplaceholder.org/posts")
         .then((response) => {
