@@ -67,7 +67,51 @@
 //     console.log(error);
 //   });
 // --------------------------------------------------------------------------------------------
-// Step 3: achieving concurrency using async await
+// // Step 3: achieving concurrency using async await
+// function washing() {
+//   console.log("Washing started");
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("washing done!");
+//     }, 5000);
+//   });
+// }
+// function soaking() {
+//   console.log("Soaking started");
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       reject("some fault in machine!!!");
+//     }, 3000);
+//   });
+// }
+// function drying() {
+//   console.log("Drying started");
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("drying done!");
+//     }, 2000);
+//   });
+// }
+// let washingMachine = async () => {
+//   try {
+//     let washingResult = await washing();
+//     console.log(washingResult);
+//     let soakingResult = await soaking();
+//     console.log(soakingResult);
+//     let dryingResult = await drying();
+//     console.log(dryingResult);
+//   } catch (error) {
+//     console.log("error caught=>> ", error);
+//   } finally {
+//     console.log("I run everytime no matter what !!");
+//   }
+// };
+// washingMachine();
+// ----------------------------------------------------------------------------------------
+// top-level await (supplement of async await)
+// Definition: top-level await allow us to write code that pauses execution until a promise is resolved or
+// rejected, without needing to define a separate async function.
+// Top-level await can only be used at the top level of module, meaning it's not inside a function, class or other block
 function washing() {
     console.log("Washing started");
     return new Promise((resolve, reject) => {
@@ -80,7 +124,7 @@ function soaking() {
     console.log("Soaking started");
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            reject("some fault in machine!!!");
+            resolve("Soaking done!");
         }, 3000);
     });
 }
@@ -92,21 +136,15 @@ function drying() {
         }, 2000);
     });
 }
-let washingMachine = async () => {
-    try {
-        let washingResult = await washing();
-        console.log(washingResult);
-        let soakingResult = await soaking();
-        console.log(soakingResult);
-        let dryingResult = await drying();
-        console.log(dryingResult);
-    }
-    catch (error) {
-        console.log("error caught=>> ", error);
-    }
-    finally {
-        console.log("I run everytime no matter what !!");
-    }
-};
-washingMachine();
+try {
+    let washingResult = await washing();
+    console.log(washingResult);
+    let soakingResult = await soaking();
+    console.log(soakingResult);
+    let dryingResult = await drying();
+    console.log(dryingResult);
+}
+catch (error) {
+    console.log(error);
+}
 export {};
