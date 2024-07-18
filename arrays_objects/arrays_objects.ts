@@ -45,7 +45,6 @@
 //   console.log("Todo found=>>", findTodo);
 // }
 
-
 // --------------------------------------------------------------------------------------
 // ARRAYS PRACTISE
 let matrixArr: number[][] = [
@@ -116,3 +115,24 @@ let matrixArr: number[][] = [
 // console.log(filterBooksByAuthor);
 
 // -------------------------------------------------------------------------------------------
+
+// // Map method
+// // the map method creates a new array by applying a provided function to each element of the original
+// // array.It transforms each element and returns a new array with the transformed values.
+
+// // EXAMPLE#1 (squares of numbers)
+// let numArr: number[] = [3, 5, 6, 9];
+// let squaresOfNums: number[] = numArr.map(
+//   (currentVal: number) => currentVal * currentVal
+// );
+// console.log(squaresOfNums);
+
+// // EXAMPLE#2 (converting numbers to string)
+// let stringArr: string[] = numArr.map((val) => val.toString());
+// console.log(stringArr);
+
+// // REDUCE METHOD
+// // The reduce method is used to reduce an array of values to a singal value
+// let numArray: number[] = [4, 3, 2, 8, 5];
+// let sumOfNums = numArray.reduce((total, currentValue) => total + currentValue);
+// console.log(sumOfNums);
