@@ -46,6 +46,7 @@ let matrixArr = [
     [4, 5, 6],
     [7, 8, 9],
 ];
+export {};
 // let sumOFDiagonals = 0;
 // let diagonalElements: number[] = [];
 // for (let i = 0; i < matrixArr.length; i++) {
@@ -114,9 +115,8 @@ let matrixArr = [
 // // EXAMPLE#2 (converting numbers to string)
 // let stringArr: string[] = numArr.map((val) => val.toString());
 // console.log(stringArr);
-// REDUCE METHOD
-// The reduce method is used to reduce an array of values to a singal value
-let numArray = [4, 3, 2, 8, 5];
-let sumOfNums = numArray.reduce((total, currentValue) => total + currentValue);
-console.log(sumOfNums);
-export {};
+// // REDUCE METHOD
+// // The reduce method is used to reduce an array of values to a singal value
+// let numArray: number[] = [4, 3, 2, 8, 5];
+// let sumOfNums = numArray.reduce((total, currentValue) => total + currentValue);
+// console.log(sumOfNums);

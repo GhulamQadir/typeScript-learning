@@ -17,10 +17,25 @@
 // console.log("studentForm=>>", studentForm);
 // console.log("registrationForm=>>", registrationForm);
 // -----------------------------------------------------------------------------------------------
-// explicit type casting or type assertion (to change the type of variable forcefully)
-let myName = "Ghulam Qadir";
-let takeNameAsString = myName;
-// // we can do this by also using this method
-// let takeNameAsString: number = <number>myName;
-console.log(takeNameAsString);
+// // explicit type casting or type assertion (to change the type of variable forcefully)
+// let myName: unknown = "Ghulam Qadir";
+// let takeNameAsString: number = myName as number;
+// // // we can do this by also using this method
+// // let takeNameAsString: number = <number>myName;
+// console.log(takeNameAsString);
+// ----------------------------------------------------------------------------------------
+// difference between any, unknown and never
+// any: The any type turns off all type checking for the variables or expressions it is applied to.
+let userName = "Ali";
+userName = 45;
+userName = true;
+userName.map((val) => console.log(val));
+// unknown: The unknown type is a safer alternative to any because it still enforces type checking and type
+// safety.
+// Variables of type unknown can hold values of any type , but you must perform type checks or type
+// assertions before using them in any ways.
+let user1 = "Sameer";
+user1 = 54;
 export {};
+// but we cannot apply methods on it
+// user1.map it gives an error
