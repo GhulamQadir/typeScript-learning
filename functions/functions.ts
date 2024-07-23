@@ -4,7 +4,7 @@
 //   yougurtP: number,
 //   onionsP: number,
 //   meatP: number
-// ) {
+// ): string {
 //   return `Total Cost of Karahi is:  ${masalaP + yougurtP + onionsP + meatP}`;
 // }
 // let total = karahiTotal(100, 200, 200, 1500);
@@ -13,27 +13,27 @@
 // ---------------------------------------------------------------------------------------------------
 
 // // DEFAULT PARAMS FUNCTION
-// function karahiTotal(
+// function karahiTotal1(
 //   yougurtP: number,
 //   onionsP: number,
 //   meatP: number,
 //   masalaP: number = 150 // NOTE: optional parameter have to be declared in last
-// ) {
+// ): string {
 //   return `Total Cost of Karahi is:  ${masalaP + yougurtP + onionsP + meatP}`;
 // }
-// let total = karahiTotal(300, 250, 1600);
+// let total1 = karahiTotal1(300, 250, 1600);
 // console.log(total);
 
 // ---------------------------------------------------------------------------------------------------
 
 // // REST PARAMETERS (have to be declared in last)
-// function karahiTotal(
+// function karahiTotal2(
 //   yougurtP: number,
 //   onionsP: number,
 //   meatP: number,
 //   masalaP: number,
 //   ...rest: number[] // NOTE: rest param have to be declared in last
-// ) {
+// ):string {
 //   let restCost = rest;
 //   let otherTotal = restCost.reduce(function (a, b) {
 //     // NOTE: reduce function adds array values
@@ -43,8 +43,8 @@
 //     masalaP + yougurtP + onionsP + meatP + otherTotal
 //   }`;
 // }
-// let total = karahiTotal(300, 250, 1600, 40, 200, 70);
-// console.log(total);
+// let total2 = karahiTotal2(300, 250, 1600, 40, 200, 70);
+// console.log(total2);
 
 // ---------------------------------------------------------------------------------------------------
 
